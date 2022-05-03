@@ -48,6 +48,11 @@ private _getHtmlForWebview(webview: vscode.Webview) {
     const styleResetUri = webview.asWebviewUri(
         vscode.Uri.joinPath(this._extensionUri, "media", "reset.css")
     );
+
+    const styleVSCodeUri = webview.asWebviewUri(
+        vscode.Uri.joinPath(this._extensionUri, "media", "vscode.css")
+    );
+    
     const styleMainUri = webview.asWebviewUri(
         vscode.Uri.joinPath(this._extensionUri, "out", "compiled/sidebar.css")
     );
@@ -56,9 +61,7 @@ private _getHtmlForWebview(webview: vscode.Webview) {
         vscode.Uri.joinPath(this._extensionUri, "out", "compiled/sidebar.js")
     );
 
-    const styleVSCodeUri = webview.asWebviewUri(
-        vscode.Uri.joinPath(this._extensionUri, "media", "vscode.css")
-    );
+
 
     // Use a nonce to only allow a specific script to be run.
     const nonce = getNonce();
