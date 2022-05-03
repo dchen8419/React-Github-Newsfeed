@@ -18,14 +18,14 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "Newsfeed",
-          "title": "Newsfeed",
+          "id": "newsfeed-sidebar-view",
+          "title": "Github Newsfeed",
           "icon": "media/list-flat.svg"
         }
       ]
     },
     "views": {
-      "vsinder-sidebar-view": [
+      "newsfeed-sidebar-view": [
         {
           "type": "webview",
           "id": "newsfeed-sidebar",
@@ -70,6 +70,7 @@
     "mocha": "^9.1.3",
     "react": "^18.0.0",
     "rollup": "^2.70.2",
+    "rollup-plugin-jsx": "^1.0.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
